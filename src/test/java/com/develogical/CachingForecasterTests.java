@@ -73,3 +73,4 @@ public class CachingForecasterTests {
         verify(fakeForecaster, atMost(2)).forecast(location, day);
     }
 }
+
