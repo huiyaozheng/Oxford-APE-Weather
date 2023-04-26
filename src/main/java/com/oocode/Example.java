@@ -34,3 +34,5 @@ public class Example {
         System.out.printf("forecaster: %s day=%s min=%s max=%s description=%s%n",
                 place, day, minTemp, maxTemp, description);    }
 }
+
+
