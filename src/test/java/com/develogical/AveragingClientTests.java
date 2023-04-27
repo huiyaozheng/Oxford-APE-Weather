@@ -21,8 +21,8 @@ import static org.mockito.Mockito.*;
 public class AveragingClientTests {
     @Test
     public void test() throws IOException {
-        MetOfficeForecasterClientAdapter fakeMetAdapter = mock(MetOfficeForecasterClientAdapter.class);
-        NavyForecastingClientAdapater fakeNavyAdapter = mock(NavyForecastingClientAdapater.class);
+        Forecaster fakeMetAdapter = mock(Forecaster.class);
+        Forecaster fakeNavyAdapter = mock(Forecaster.class);
         given(fakeMetAdapter.forecast("Oxford", DayOfWeek.MONDAY)).willReturn(new Forecast(1,2,"blahblah"));
         given(fakeNavyAdapter.forecast("Oxford", DayOfWeek.MONDAY)).willReturn(new Forecast(3,4,"blah"));
 
